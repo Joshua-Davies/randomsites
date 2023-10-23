@@ -1,0 +1,35 @@
+html {
+    background: darkslategray;
+    color: white;
+    font-size: 25px;
+
+}
+button {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    background-color: darkslategrey;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+#text {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    background-color: darkslategrey;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 35px;
+}
