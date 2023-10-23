@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rotating Cow Go Moo</title>
+    <style>
+        body {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            background-image: url("images/cow.png");
+            background-size: 100px;
+            background-repeat: repeat;
+            
+        }
+
+        .floating-text {
+            position: absolute;
+            animation: rotateText 5s linear infinite;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            background-color: pink;
+            border-radius: 90px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @keyframes rotateText {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function createFloatingText() {
+            const text = document.createElement('div');
+            text.className = 'floating-text';
+            text.innerText = 'Cow Go Moo';
+            document.body.appendChild(text);
+
+            const randomX = Math.random() * 100;
+            const randomY = Math.random() * 100;
+            text.style.left = `${randomX}vw`;
+            text.style.top = `${randomY}vh`;
+
+            const randomSize = Math.floor(Math.random() * 69) + 1; // Random font size between 12px and 48px
+            text.style.fontSize = `${randomSize}px`;
+        }
+
+        // Create floating text at random positions with random sizes
+        for (let i = 0; i < Math.random() * 100; i++) {
+            createFloatingText();
+        }
+    </script>
+</body>
+</html>

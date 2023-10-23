@@ -1,11 +1,16 @@
 html {
-    background: darkslategray;
+    background: rgb(255, 255, 255);
     color: white;
     font-size: 25px;
 
 }
 button {
-    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     margin: auto;
     padding: 20px;
     width: 300px;
@@ -15,21 +20,9 @@ button {
     font-weight: bold;
     border-radius: 10px;
     font-size: 35px;
+    box-shadow: 10px 10px grey;
 }
 
 button:hover {
     background-color: grey;
-}
-
-#text {
-    display: block;
-    margin: auto;
-    padding: 20px;
-    width: 300px;
-    background-color: darkslategrey;
-    border: 2px solid white;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 35px;
 }

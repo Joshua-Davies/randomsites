@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Random Website</title>
+</head>
+<body>
+    <div id="timer">You have wasted 0 seconds of your life looking at this page.</div>
+    <style>
+        div{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin: auto;
+            padding: 20px;
+            width: 300px;
+            background-color: darkslategrey;
+            border: 2px solid white;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 35px;
+            box-shadow: 10px 10px grey;
+        }
+    </style>
+    <script>
+        let seconds = 0;
+        const timerElement = document.getElementById('timer');
+
+        function updateTimer() {
+            seconds++;
+            timerElement.innerText = `You have wasted ${seconds} seconds of your life looking at this page.`;
+        }
+
+        const timerInterval = setInterval(updateTimer, 1000);
+
+        window.addEventListener('beforeunload', () => {
+            clearInterval(timerInterval);
+        });
+    </script>
+
+</body>
+</html>
