@@ -1,6 +1,7 @@
 var options = [
     "cowgomoo.html",
     "timewasted.html",
+    "pointlesstask"
     // Add more website URLs here
 ];
 

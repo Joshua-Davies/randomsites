@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pointless Task Website</title>
+    <style>
+        html {
+            background: rgb(255, 255, 255);
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        button {
+            padding: 20px;
+            width: 300px;
+            background-color: darkslategrey;
+            border: 2px solid white;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 35px;
+            box-shadow: 10px 10px grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s; /* Add transition for smooth color change */
+        }
+
+        button:hover {
+            background-color: grey;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Pointless Task Website</h1>
+    <p id="taskDescription">Click the button below to complete a pointless task.</p>
+    <p id="taskCompletedMessage" class="hidden">Task Completed</p>
+    <button id="taskButton">Click Me!</button>
+
+    <script>
+        const button = document.getElementById("taskButton");
+        const taskDescription = document.getElementById("taskDescription");
+        const taskCompletedMessage = document.getElementById("taskCompletedMessage");
+
+        button.addEventListener("click", function() {
+            // Hide the task description
+            taskDescription.style.display = "none";
+
+            // Show the "Task Completed" message
+            taskCompletedMessage.style.display = "block";
+
+            // Add the 'green-button' class to change the background color to green when clicked
+            button.classList.add("green-button");
+
+            // Disable the button after it's clicked to prevent multiple clicks
+            button.disabled = true;
+        });
+    </script>
+</body>
+</html>
