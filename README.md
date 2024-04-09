@@ -13,10 +13,6 @@ A simple website, that takes you to one of my random websites.
 2. Click the "Click For Random Site" button to get a random website.
 3. Explore the Random website.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contact
 
 - GitHub: [Joshua-Davies](https://github.com/Joshua-Davies)
