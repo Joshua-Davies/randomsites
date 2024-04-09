@@ -1,9 +1,9 @@
 html {
-    background: rgb(255, 255, 255);
-    color: white;
+    background: rgb(230, 230, 230);
+    color: black; /* Changed text color to black for better contrast */
     font-size: 25px;
-
 }
+
 button {
     margin: 0;
     position: absolute;
@@ -11,18 +11,19 @@ button {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    margin: auto;
+    margin: auto; /* redundant */
     padding: 20px;
     width: 300px;
-    background-color: darkslategrey;
+    background-color: royalblue; /* Changed button color to royalblue */
     border: 2px solid white;
     color: white;
     font-weight: bold;
     border-radius: 10px;
     font-size: 35px;
-    box-shadow: 10px 10px grey;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adjusted box shadow */
+    transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
 }
 
 button:hover {
-    background-color: grey;
+    background-color: dodgerblue; /* Changed hover color to dodgerblue */
 }
