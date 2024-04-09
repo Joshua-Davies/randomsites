@@ -1,7 +1,8 @@
 var options = [
     "cowgomoo.html",
     "timewasted.html",
-    "pointlesstask"
+    "pointlesstask",
+    "https://joshua-davies.github.io/normalwebsite/"
     // Add more website URLs here
 ];
 
